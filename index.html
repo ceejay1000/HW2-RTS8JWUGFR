@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+
+        body {
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 960px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+    </style>
+</head>
+<body>
+
+   <div class="container">
+        <button id="btn">
+            Get Date
+        </button>
+
+        <p id="showdate"></p>
+   </div>
+
+    <script>
+       let btn = document.getElementById("btn");
+       let showDate = document.getElementById("showdate");
+
+       btn.addEventListener("click", () => {
+
+            showDate.innerHTML = new Date();
+       })
+    </script>
+</body>
+</html>
